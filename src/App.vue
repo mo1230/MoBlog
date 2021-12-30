@@ -1,13 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Top />
     </div>
     <router-view/>
   </div>
 </template>
 
+ <<script>
+  import Top from './components/Top.vue'
+ export default {
+   data() {
+     return {
+
+     }
+   },
+   components: {
+      Top
+   }
+ }
+ </script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -18,7 +30,8 @@
 }
 
 #nav {
-  padding: 30px;
+  /* padding: 30px; */
+  
 }
 
 #nav a {
